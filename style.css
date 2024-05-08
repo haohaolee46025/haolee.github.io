@@ -1,34 +1,236 @@
-:root {
-    --font-size: 20px;
-    --color: olivedrab;
-    --gutter: calc(var(--font-size)*1.618);
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+:root{
+    --font-display:'Share Tech Mono', monospace;
+    --font-display-content:'Mukta', sans-serif;;
+    --spacing:10%;
 }
 
-@media (min-width: 600px) {
-    :root {
-        --font-size: 32px;
-    }
+
+
+/* ---------------------------------------Home page---------------------------------------*/
+
+body{
+    background-color:#0b0b0b;
 }
 
-body {
-    font-family: sans-serif;
-    font-size: var(--font-size);
-    padding-top: calc(var(--gutter)*3);
-    padding-bottom: calc(var(--gutter)*3);
-    padding-left: var(--gutter);
-    padding-right: var(--gutter);
-    /*color: var(--color);*/
-    display: flex;
-    flex-direction: column;
-    row-gap: var(--gutter);
+#Homepage-section1{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h1{
+    color: rgb(128, 255, 192);
+    font-size:58px;
+    line-height: 70px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-top:0px;
+    margin-bottom:10px;
+}
+
+  
+h2{
+    color: rgb(128, 255, 192);
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top:30px;
+    text-align: left;
+}
+
+
+h5{
+    color: rgb(128, 255, 192);
+    font-size: 16px;
+    line-height: atuo;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-bottom: 40px;}
+
+
+p{
+    color:rgb(220, 220, 239);
+    font-size:20px;
+    font-weight: 100;
+    width:100%;
+    line-height: 32px;
+    margin-bottom:80px;
+    letter-spacing: 1px;
+}
+
+
+#myname{
+    margin-bottom: 100px;
+}
+
     
+
+
+.container-menu {
+    flex-wrap: wrap;
+    align-items: center;
+
 }
 
-h1 {
-    color: palevioletred;
-    font-size: calc(var(--font-size)*2);
+.menu-item {
+  flex:1;
+  width: 100%; 
+  margin-bottom:100px
 }
 
-footer {
-    color: black;
+
+
+h3{
+    color: rgb(220, 220, 239);
+    font-size:30px;
+    line-height: 36px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom:60px;
+}
+
+h4{ color:rgb(220, 220, 239);
+    font-size:22px;
+    line-height: 30px;
+    font-weight: 300;
+    margin-top:-40px;
+    margin-bottom:20px;
+    letter-spacing: 1px;
+}
+
+
+.shine a {
+         text-decoration: none;
+        color: #120536; 
+}
+      
+.button a {
+        text-decoration: none;
+        color: rgb(220, 220, 239);
+        border-style:solid;
+        border-color:rgb(220, 220, 239);
+        font-size:18px;
+        border-radius: 25px;
+        padding-left:24px;
+        padding-right:24px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-weight: 400;
+}
+     
+.button a:hover { 
+    color: rgb(128, 255, 192);
+    border-style:solid;
+    border-color: rgb(128, 255, 192);
+}      
+
+
+
+
+
+
+/* ==============================footer---------------------------------------*/
+
+hr{
+    margin-top:-20px ;
+    margin-bottom:120px ;
+    opacity: 20% ;
+}
+
+footer{
+    padding-bottom:40px;
+    padding-top:40px;
+    position:sticky;
+}
+
+.container_footer{
+    display:flex;
+    flex-wrap: wrap;
+    }
+
+#footerbookname {
+    margin-top:80px;
+    line-height: 56px;
+    margin-bottom:0px;
+    font-size: 50px;
+}
+
+#intent{
+    font-size: 18px;
+}
+
+/* ==============================1080---------------------------------------*/
+
+@media screen and (min-width:1280px) { 
+
+:root{
+        --font-display:'Share Tech Mono', monospace;
+        --font-display-content:'Mukta', sans-serif;;
+        --spacing:20px;
+    }
+
+    #Homepage-section1{
+        margin-top:180px;
+        margin-bottom: 180px;
+    }
+
+.div-container {
+    justify-content: center;
+    }
+        
+
+h5 {font-size: 18px;
+    }
+
+
+
+.star{
+      font-size: 320px;}
+
+h1{
+    font-size: 80px;
+    margin-bottom:100px;
+    text-align: center;
+}    
+
+
+h2{
+    font-size: 50px;
+    line-height: 75px;
+    margin-top:80px;
+    text-align: center;}    
+
+
+.container-menu {
+    display:flex;
+    flex-wrap: wrap;
+    margin-top:-80px;
+    align-items: center;
+    margin-left:10vw;
+    }
+    
+.menu-item {
+    width: calc(33.33%);
+    }
+
+h3{
+    font-size:28px;
+    }
+
+h4{
+    font-size:24px;
+    line-height: 36px;
+    }
+
+#intent{
+    font-size: 18px;
+    opacity: 70%;
+    }    
+
 }
